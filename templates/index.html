@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roosevelt App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #4B92DB;
+            font-family: 'Orbitron', sans-serif;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button-container a {
+            background-color: #C60C30;
+            color: #FFFFFF;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container a:hover {
+            background-color: #A5ACAF;
+            transform: translateY(-5px);
+        }
+
+        .button-container a:active {
+            background-color: #C60C30;
+            transform: translateY(2px);
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #A5ACAF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Roosevelt App</h1>
+    <p>Choose an action below:</p>
+    <div class="button-container">
+        <a href="/generate_text_form">Generate Text</a>
+        <a href="/create_image_form">Create Image</a>
+        <a href="/clone_files_form">Clone Files</a>
+        <a href="/automate_task">Automate Task</a>
+    </div>
+    <footer>&copy; 2024 Roosevelt App | Designed for Futuristic Tech Enthusiasts</footer>
+</body>
+</html>

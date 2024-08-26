@@ -1,0 +1,8 @@
+flask
+requests
+openai
+pyautogui
+pillow
+gitpython
+paramiko
+python-dotenv

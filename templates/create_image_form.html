@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Image</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #4B92DB;
+            font-family: 'Orbitron', sans-serif;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            width: 300px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        button {
+            background-color: #C60C30;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #A5ACAF;
+            transform: translateY(-5px);
+        }
+
+        button:active {
+            background-color: #C60C30;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Image</h1>
+    <form action="/create_image" method="POST">
+        <input type="text" name="color" placeholder="Color" required>
+        <input type="number" name="width" placeholder="Width" required>
+        <input type="number" name="height" placeholder="Height" required>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>
